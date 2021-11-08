@@ -1,0 +1,132 @@
+body {
+    font-size: 24px;
+}    
+
+.anim1 {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: relative;
+      animation: mymove 4s infinite;
+    }
+    
+
+
+@keyframes mymove {
+      0%   { top: 0px; left: 0px; background: red; }
+      25%  { top: 0px; left: 530px; background: blue; }
+      50%  { top: 100px; left: 530px; background: yellow; }
+      75%  { top: 100px; left: 0px; background: green; }
+      100% { top: 0px; left: 0px; background: red; }
+    }
+.textan {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+    height: 150px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+    75% {
+  font-size: 300%;
+  margin-left: 25%;
+  width: 150%;
+}
+}
+
+ .block-animation {
+        color: aliceblue;
+        text-align: center;
+        align-items: center;
+        font-size: 18px;
+          width: 130px;
+          height: 130px;
+          background-color: #2196F3;
+transition: width 1s cubic-bezier(0, 0, 1, 1) 500ms;
+        }
+        
+        .block-animation:hover {
+          width: 230px;
+        }
+
+.block1 {
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+   margin-top: 50px;
+}
+
+.block2 {
+    width: 250px;
+    height: 150px;
+    background-color: coral;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+    .contur{
+            width: 128px;
+            height: 96px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            background-color: aqua;
+            outline-color: blue;
+            outline-style: dashed;
+            outline-width: 2px;
+        }
+
+.border {
+    width: 128px;
+    height: 96px;
+    margin: 20px;
+    border: 2px solid #000;
+    background-color: cornflowerblue;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+}
+
+a:link,
+a:visited {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+a:hover {
+    color:hotpink;
+} 
+
+q::before {
+  content: "«";
+  color: blue;
+}
+
+q::after {
+  content: "»";
+  color: red;
+}
+
+table {
+        border-collapse: collapse;
+    }
+    table th,
+    table td {
+        padding: 0 3px;
+    }
+    table.brd th,
+    table.brd td {
+        border: 1px solid #000;
+    }
